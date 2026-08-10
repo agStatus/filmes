@@ -4,7 +4,7 @@ header{
 	width: 100%;
 	background: black;
 	display: flex;
-	justify-content:space-between;
+	justify-content:space-around;
 	align-items: center;
 }
 ul{
