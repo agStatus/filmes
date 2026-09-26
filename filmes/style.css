@@ -191,3 +191,20 @@ footer > p{
 	font-size: 19px;
 	text-align: justify;
 }
+.disponivel{
+	width: 1000px;
+}
+.disponivel ul{
+	display: flex;
+	justify-content: space-between;
+	width: 1000px;
+	margin: 20px;
+}
+.disponivel ul li{
+	list-style: none;
+	background: red;
+	color: white;
+	padding: 4px 7px;
+	font-size: 22px;
+	border-radius: 7px;
+}
