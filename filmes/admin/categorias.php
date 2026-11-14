@@ -16,7 +16,7 @@
 </main>
 
 <?php
-
+		/*Inserir dados na tabela categoria*/
 	if(isset($_GET['salvar'])){
 		$nomeCategoria = $_GET['categoria'];
 
@@ -27,10 +27,22 @@
 		 }else {
 		 	echo "Deu ruim";
 		 }
-
-
-
 	}
 
+	/*Buscar dados da tabela categoria*/
+	$sql = "SELECT * FROM categoria";
+	$resultado = $conn->query($sql);
+
+	while ($obj = $resultado->fetch_assoc()) {
+		echo $obj['id']." - ".$obj['nome'].
+		"<a href='?editar=".$obj['id']."'>Editar</a><br>";
+
+	}
 	
+	/*Editar uma categoria*/
+	if(isset($_GET['editar'])){
+		echo "entrou, lá ele";
+	}
+
+
  ?>
